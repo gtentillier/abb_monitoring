@@ -4,7 +4,7 @@
         {
             "label": "Docker: Rebuild and Restart",
             "type": "shell",
-            "command": "docker-compose up -d --build && docker-compose logs -f",
+            "command": "docker compose up -d --build && docker compose logs -f",
             "group": {
                 "kind": "build",
                 "isDefault": true
