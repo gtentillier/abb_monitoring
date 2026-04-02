@@ -1,0 +1,9 @@
+services:
+  monitor:
+    build: .
+    container_name: surveillance_abb
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data

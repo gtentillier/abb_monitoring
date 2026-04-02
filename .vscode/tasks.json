@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Docker: Rebuild and Restart",
+            "type": "shell",
+            "command": "docker-compose up -d --build && docker-compose logs -f",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "runOptions": {
+                "runOn": "default"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
